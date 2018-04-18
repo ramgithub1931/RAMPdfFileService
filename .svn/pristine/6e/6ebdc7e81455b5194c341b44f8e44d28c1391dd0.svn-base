@@ -1,0 +1,82 @@
+{
+  "PrinterPath":null,
+  "DestinationPath": "C:\\Users\\akrause\\Desktop",
+  "Filename": "TheApp",
+  "Pdfs":[
+    {
+      "Filename":"DEC",
+      "Fields":null
+    },
+    {
+      "Filename":"ACORD90(08-06)Page1",
+      "Fields":[
+        {
+          "Name":"TELEPHONE NUMBER",
+          "Value":"(218) 555-5555"
+        },
+        {
+          "Name":"DATE MMDDYYYY",
+          "Value":"11/06/2017"
+        },
+        {
+          "Name":"CODE",
+          "Value":"239"
+        },
+        {
+          "Name":"PREVIOUS ADDRESS If less than 3 years",
+          "Value":"12345 Street Avenue//nDuluth, MN 55811"
+        },
+        {
+          "Name":"VEH_NO_1",
+          "Value":"1"
+        },
+        {
+          "Name":"VEH_NO_2",
+          "Value":"2"
+        },
+        {
+          "Name":"YEARRow1",
+          "Value":"1989"
+        },
+        {
+          "Name":"YEARRow2",
+          "Value":"2015"
+        },
+        {
+          "Name":"MAKE MODEL AND BODY TYPERow1",
+          "Value":"Ford Mustang Ford Mustang Ford Mustang Ford Mustang Ford Mustang Ford Mustang Ford Mustang Ford Mustang Ford MustangFord MustangFord Mustang"
+        },
+        {
+          "Name":"MAKE MODEL AND BODY TYPERow2",
+          "Value":"Chevy Silverado Double Cab"
+        }
+      ]
+    },
+    {
+      "Filename":"ACORD90(08-06)",
+      "Fields":[
+        {
+          "Name":"TELEPHONE NUMBER",
+          "Value":"(218) 555-5555"
+        },
+        {
+          "Name":"DATE MMDDYYYY",
+          "Value":"11/06/2017"
+        },
+        {
+          "Name":"CODE",
+          "Value":"239"
+        }
+      ]
+    },
+    {
+      "Filename":"CF120",
+      "Fields":[
+        {
+          "Name":"Name",
+          "Value":"Ben Mickelson"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "PrinterPath":null,
+  "DestinationPath":"C:\\Users\\akrause\\Desktop",
+  "Filename":"QA_APP_651_33838.777.pdf",
+  "Pdfs":[
+    {
+      "Filename":"Checklist_33838_792.pdf",
+      "Fields":null
+    },
+    {
+      "Filename":"Medical_Statement_1.pdf",
+      "Fields":[
+        {
+          "Name":"DRIV.NAME",
+          "Value":"BEN MINNESOTA"
+        },
+        {
+          "Name":"DRIV.BIRTH.DT",
+          "Value":"01/01/40"
+        },
+        {
+          "Name":"DRIV.AGE",
+          "Value":"77"
+        },
+        {
+          "Name":"DRIV.SEX",
+          "Value":"M"
+        }
+      ]
+    }
+  ]
+}

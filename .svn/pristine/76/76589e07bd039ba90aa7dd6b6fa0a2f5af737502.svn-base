@@ -1,0 +1,50 @@
+﻿using iText.Kernel.Pdf;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace RAMPdfFileService
+{
+    public static class Helpers
+    {
+        public static StreamReader GetStreamReader(string path, int numSeconds = 1)
+        {
+            int tries = 0;
+            while (!File.Exists(path))
+            {
+                tries++;
+
+                if (tries >= (numSeconds * 10))
+                {
+                    throw new FileNotFoundException(String.Format("Could not find file {0}", path));
+                }
+
+                Thread.Sleep(100);
+            }
+
+            return new StreamReader(path);
+        }
+
+        public static PdfReader GetPdfReader(string path, int numSeconds = 1)
+        {
+            int tries = 0;
+            while (!File.Exists(path))
+            {
+                tries++;
+
+                if (tries >= (numSeconds * 10))
+                {
+                    throw new FileNotFoundException(String.Format("Could not find file {0}", path));
+                }
+
+                Thread.Sleep(100);
+            }
+
+            return new PdfReader(path);
+        }
+    }
+}

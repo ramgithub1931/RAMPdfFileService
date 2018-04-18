@@ -1,0 +1,87 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RAMPdfFileService
+{
+    public class PdfMerge
+    {
+        #region Data Fields
+
+        private string _filename;
+
+        #endregion
+
+        #region Properties
+
+        public string PrinterPath { get; set; }
+
+        public string DestinationPath { get; set; }
+
+        public string Filename
+        {
+            get
+            {
+                return _filename;
+            }
+            set
+            {
+                if (!Path.HasExtension(value))
+                {
+                    _filename = String.Format("{0}{1}", value, ".pdf");
+                }
+                else
+                {
+                    _filename = value;
+                }
+            }
+        }
+
+        public List<Pdf> Pdfs { get; set; }
+
+        #endregion
+
+        public class Pdf
+        {
+            #region Data Fields
+
+            private string _filename;
+
+            #endregion
+
+            #region Properties
+
+            public string Filename
+            {
+                get
+                {
+                    return _filename;
+                }
+                set
+                {
+                    if (!Path.HasExtension(value))
+                    {
+                        _filename = String.Format("{0}{1}", value, ".pdf");
+                    }
+                    else
+                    {
+                        _filename = value;
+                    }
+                }
+            }
+
+            public List<Field> Fields { get; set; }
+
+            #endregion
+
+            public class Field
+            {
+                public string Name { get; set; }
+                public string Value { get; set; }
+            }
+        }
+    }
+}

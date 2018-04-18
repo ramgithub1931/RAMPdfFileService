@@ -1,0 +1,20 @@
+{
+  "PrinterPath": "",
+  "DestinationPath": "C:\\Users\\akrause\\Desktop",
+  "Filename": "TheNewOne.pdf",
+  "Pdfs": [
+    {
+      "Filename": "Dec.pdf",
+      "Fields": null
+    },
+    {
+      "Filename": "SampleForm.pdf",
+      "Fields": [
+        {
+          "Name": "Name",
+          "Value": "FRED FLINTSTONE"
+        }
+      ]
+    }
+  ]
+}

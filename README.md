@@ -58,3 +58,5 @@ RAMPdfFileService will read the pdf.json file to get the names of the pdfs to pr
 ## Practical Uses
 * Fill out form fillable pdfs from data pulled from a database or some other source.
 * Merge multiple pdfs into one.
+
+The way we use this service is a combination of the two listed above.  We used to use somftware to place data on a pdf and then overlay a pdf on top of that.  We had to place the data perfectly to get things lined up on top of the overlay and if that overlaid pdf ever changed formats we needed to go through and relign everything.  Now we can simple modify the form fillable version as needed and the data will populate exactly where it needs to be.

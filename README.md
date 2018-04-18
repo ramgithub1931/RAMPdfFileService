@@ -23,6 +23,13 @@ You should only need to download the code, unzip, open, and build the solution.
   "DoSaveErrors": false
 }
 ```
+Field | Type | Note
+------|------|------
+WatcherDirectory|string|The directory to watch for incoming folders.
+InternalBufferSize|number|The size of the internal buffer used to process requests.  If processing many folders at once this may need to be insureased.  Use multiples of 4096 for best results.
+DoSaveBackups|boolean|If true backups of all folders processed will be saved to the backups directory.
+DoSaveErrors|boolean|If true all folders that errored will be saved to the backups directory.
+
 * Copy all of these files to the server you wish to install RAMPdfFileService.
 * Create a directory on that the same server where you want RAMPdfFileService to monitor.
 * Open a command prompt and navigate to the directory where you placed RAMPdfFileService.
@@ -59,3 +66,9 @@ RAMPdfFileService will read the pdf.json file to get the names of the pdfs to pr
   ]
 }
 ```
+Field | Type | Note
+------|------|------
+PrinterPath|string|The path to the physical printer for printing the finished pdf.
+DestinationPath|number|The path to the directory to copy the finished pdf to.
+Filename|string|The name of the finished pdf.
+Pdfs|array|The pdfs to process.
